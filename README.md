@@ -46,3 +46,4 @@ To complete the GithubLogin task you need to clone the VueJS core repository int
 ## Results
 
 The results of each task should be placed as a JSON file in a folder named `results` in the directory you have launched the execution.
+
