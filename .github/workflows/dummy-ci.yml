@@ -6,6 +6,9 @@ jobs:
   pipeline:
     runs-on: ubuntu-latest
 
+    env:                           # Define environment variables for the job
+      PRINTLEMEDI: "your_value_here"  # Replace with the actual value
+
     steps:
       - name: Checkout code             # (optional but common)
         uses: actions/checkout@v4
@@ -17,4 +20,9 @@ jobs:
         run: echo "Test step"
 
       - name: Deploy
-        run: echo "Deploy step"
+        env:                           # Define environment variables for this step
+          usePassword: ${{ secrets.USE_PASSWORD }}  # Securely fetch from GitHub Secrets
+        run: |
+          echo "Deploy step"
+          echo "PRINTLEMEDI: $PRINTLEMEDI"
+          echo "usePassword: $usePassword"

@@ -1,7 +1,7 @@
 import json
 import os
 
-output_folder = "../results"
+output_folder = "../result"
 
 
 def create_result_file(file_name):
