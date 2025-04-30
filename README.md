@@ -1,4 +1,4 @@
-# CS 456 GitHub API Workshop
+# CS 456 GitHub API Workshop (FOrked)
 
 This is a workshop for students to learn how to use GitHub API and more specific learn the following concepts.
 1. HTTP API -> [Searching repositories](RepositorySearch/RepositorySearchHTTP.py) 
